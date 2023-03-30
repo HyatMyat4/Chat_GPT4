@@ -1,0 +1,10 @@
+version: '1'
+
+services:
+  app:
+    image: docker-nextjs-dev
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/app  
