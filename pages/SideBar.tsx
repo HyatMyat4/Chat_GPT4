@@ -91,11 +91,12 @@ function SideBar() {
         !session ? "hidden" : ""
       } bg-slate-100  dark:bg-[#202123] fcc px-[8px] `}
     >
-      <div  className="w-full h-[74vh] overflow-hidden  "> 
-        <div className="w-full h-[5%]">
+      <div  className="w-full h-[74vh]   "> 
+         <div className="w-full h-full fcc">
+        <div className="w-full h-[8%]">
         <CreatChat />
         </div>
-        <div id='scroolbar1-hidden' className="w-full h-[95%] overflow-y-scroll  pb-[40px]">
+        <div id='scroolbar1-hidden' className="w-full h-[92%] overflow-y-scroll overflow-hidden   pb-[40px]">
         {isLoading && !data ? (
           <div className="w-full h-full fcc justify-center ">
             <div className="w-[50px] h-auto select-none ">
@@ -106,6 +107,7 @@ function SideBar() {
         ) : (
           data?.map((data: any) => <Cheatbox key={data.id} id={data.id} />)
         )}
+        </div>
         </div>
       </div>
       <div className="w-full h-[26vh]  fcc select-none ">
