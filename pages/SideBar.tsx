@@ -89,7 +89,7 @@ function SideBar() {
     <div
       className={` min-w-[270px] 950:w-full h-screen z-50 absolute  950:static  ${
         !session ? "hidden" : ""
-      } bg-slate-100  dark:bg-[#202123] fcc px-[8px] `}
+      } bg-slate-300  dark:bg-[#202123] fcc px-[8px] `}
     >
       <div  className="w-full h-[74vh]   "> 
          <div className="w-full h-full fcc">
