@@ -27,7 +27,7 @@ function CreatChat() {
   return (
     <div
       onClick={() => create_chat_mutation.mutate()}
-      className="w-full h-[45px] border-[0.5px] border-[#9999a461] hover:bg-slate-200 dark:hover:bg-[#34353a6d] mt-[8px] mb-[10px] cursor-pointer rounded-[5px] frc justify-start"
+      className="w-full h-[45px] border-[0.5px] border-[#9999a461] hover:bg-slate-200 dark:hover:bg-[#34353a6d]  cursor-pointer rounded-[5px] frc justify-start"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,9 @@ function CreatChat() {
           d="M12 6v12m6-6H6"
         />
       </svg>
-      <span className=" text-black dark:text-[#F2F2F2] text-[14px] ">New Chat</span>
+      <span className=" text-black dark:text-[#F2F2F2] text-[14px] ">
+        New Chat
+      </span>
     </div>
   );
 }

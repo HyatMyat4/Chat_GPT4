@@ -92,11 +92,11 @@ function SideBar() {
       } bg-slate-300  dark:bg-[#202123] fcc px-[8px] `}
     >
       <div  className="w-full h-[74vh]   "> 
-         <div className="w-full h-full fcc">
-        <div className="w-full h-[8%]">
+         <div className="w-full h-full  fcc">
+        <div className="w-full h-[45px] mt-[8px] mb-[10px]  ">
         <CreatChat />
         </div>
-        <div id='scroolbar1-hidden' className="w-full h-[92%] overflow-y-scroll overflow-hidden   pb-[40px]">
+        <div id='scroolbar1-hidden' className="w-full h-full overflow-y-scroll overflow-hidden   pb-[40px]">
         {isLoading && !data ? (
           <div className="w-full h-full fcc justify-center ">
             <div className="w-[50px] h-auto select-none ">
