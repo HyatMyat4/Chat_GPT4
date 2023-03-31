@@ -89,7 +89,7 @@ export default function MainComponent({ chatId, message }: props) {
           ),
           message
         );
-
+      }   
         const MessageFake: Message = {
           text: "",
           creatAt: serverTimestamp(),
@@ -128,7 +128,7 @@ export default function MainComponent({ chatId, message }: props) {
         setDymaicheight(97);
         setheight(24);
         setThinking(false);
-      }
+      
     } catch (err) {
       console.warn(err);
     }
